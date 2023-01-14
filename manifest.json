@@ -1,0 +1,8 @@
+{
+    "name": "SIA fcked",
+    "short_name": "sia fcked" ,
+    "start_url": "index.html",
+    "background_color": "#08a6b2",
+    "theme_color": "#08a6b2",
+    "display": "standalone"
+}
