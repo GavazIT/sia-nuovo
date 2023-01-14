@@ -28,6 +28,28 @@ body, html{
 .navbar *, .navbar{
     z-index: 9999;
 }
+.progress {
+    border: 2px solid #a72713;
+    
+    border-radius: 100px;
+    align-items: center;
+    position:absolute;
+margin-left:90px;
+margin-top:-18px;
+    padding: 0 3px;
+    display: flex;
+    height: 10px;
+    width: 40px;
+  }
+  
+  .progress-value {
+    animation: load 250s normal forwards;
+    box-shadow: 0 10px 40px -10px #fff;
+    border-radius: 100px;
+    background-image: linear-gradient(#d95530,#a72713);
+    height: 6px;
+    width: 100%;
+  }
 .navbar div{
     padding-left: 4%;
     width: 100vw;
