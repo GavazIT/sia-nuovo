@@ -64,6 +64,28 @@ body, html{
     color: white;
 
 }
+.progress {
+    border: 2px solid #a72713;
+    
+    border-radius: 100px;
+    align-items: center;
+    position:absolute;
+margin-left:90px;
+margin-top:-18px;
+    padding: 0 3px;
+    display: flex;
+    height: 10px;
+    width: 40px;
+  }
+  
+  .progress-value {
+    animation: load 250s normal forwards;
+    box-shadow: 0 10px 40px -10px #fff;
+    border-radius: 100px;
+    background-image: linear-gradient(#d95530,#a72713);
+    height: 6px;
+    width: 100%;
+  }
 .lighter{
     background: #0d0d0e;
 }
@@ -144,4 +166,69 @@ video{
     display: flex;
     align-items: center;
     gap:30px;
+}
+
+/* BIGLIETTI */
+.upper_container{
+    font-size: 13pt;
+    padding: 0 40px;
+    display: flex;
+    flex-direction: row;
+    width: 80vw;
+    justify-content: center;
+    color:#08a6b2;
+    align-items: center;
+    gap:200px;
+}
+.upper_container div{
+    border: 2px solid #08a6b2;
+    height: 18px;
+    padding:6px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:5px;
+}
+.main_container{
+    background:#0d0d0e;
+    width:80vw;
+    margin: 0 auto;
+    height:fit-content;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding-bottom: 15px;
+}
+.blue_indicator{
+    margin-bottom: 5px;
+    height:10px;
+    background: #08a6b2;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.logo_strip{
+    font-size: 15pt;
+    color:#08a6b2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:90px;
+    padding-left: 80px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(51, 51, 51);
+}
+.info_container{
+    padding-left: 10px;
+}
+.info_container h5{
+    margin-top: 10px;
+    color:#08a6b2;
+    margin-bottom: 5px;
+    font-size: 12pt;
+}
+.info_container span{
+    margin-top: -60px;
+    color:white;
+    font-size: 10pt;
 }
