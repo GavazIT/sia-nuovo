@@ -2,6 +2,7 @@ function padTo2Digits(num) {
   return num.toString().padStart(2, '0');
 }
 function getOrario() {
+  console.log("ok");
   const data = formatDate(new Date());
   const orario = new Date().toLocaleTimeString('en-US', {
     hour12: false,

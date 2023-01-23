@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="profile.css">
+</head>
+
+<body onload="getOrario()">
+    <div class="blue navbar" >
+        <div style="display:flex">
+            <i onclick="document.location= 'index.html'" class="fa-solid fa-chevron-left" style="float: left;"></i>
+            <span class="header" style="width:90%;justify-self:center;font-size:12pt;font-weight:900">Profilo</span>
+        </div>
+    </div>
+    <div class="welcome lighter container" style="margin:0 auto;margin-top:0;">
+        <div style="margin-left:20px;margin-top:10px;display:flex;flex-direction: column;gap:0;font-size:15pt">
+            <h5 style="margin:0; font-weight:200;">Ciao, Alessandro</h5>
+            <div style="display:flex;align-items: center;gap:5px;margin:0">
+                <img src="./img/wallet.svg" width="20" height="20">
+                <h5 style="margin:0;font-weight:200;">€ 3,50</h5>
+            </div>
+        </div>
+        <div
+            style="margin-left:30px;margin-top:20px;margin-bottom: 30px;padding:5px 10px;width:fit-content;background-color:#08a6b2;border:0;border-radius: 5px;color:white;">
+            <span>Ricarica</span>
+        </div>
+    </div>
+    <div class="box_container">
+        <div style="padding-left:30px;display:flex; align-items:center;gap:10px">
+            <i class="fa-regular fa-user"></i>
+            <h5 style="font-size:12pt">Personali</h5>
+        </div>
+        <div class="info_boxes">
+            <h5>Dati Personali</h5>
+        </div>
+        <div class="info_boxes">
+            <h5>Elenco Movimenti</h5>
+        </div>
+        <div class="info_boxes">
+            <h5>Gestione carte</h5>
+        </div>
+        <div class="info_boxes">
+            <h5 style="color:#08a6b2">Notifiche scadenza titoli</h5>
+            <label class="switch">
+                <input type="checkbox" checked>
+                <span class="slider round"></span>
+            </label>
+        </div>
+        <div style="padding-left:30px;display:flex; align-items:center;gap:10px">
+            <h5 style="font-size:12pt;margin-top:5px">Assistenza</h5>
+        </div>
+        <div class="info_boxes">
+            <i style="color:#08a6b2;padding-left:5px" class="fa-regular fa-envelope"></i>
+            <h5 style="color:#08a6b2;margin:0 auto;padding:0">Scrivici una mail</h5>
+        </div>
+        <div class="info_boxes">
+            <i style="color:#08a6b2;padding-left:5px" class="fa-solid fa-headphones-simple"></i>
+            <h5 style="color:#08a6b2;margin:0 auto; padding:0">Call Center</h5>
+        </div>
+        <div class="info_boxes" style="margin-top:30px;">
+            <h5 style="font-weight:100">Italiano</h5>
+            <i class="fa-solid fa-chevron-down" style="color:#08a6b2;margin-left:65vw"></i>
+        </div>
+        <div class="info_boxes" style="background:#08a6b2">
+            <i style="padding-left:12px;" class="fa-solid fa-arrow-right-from-bracket"></i>
+            <h5 style="margin:0 auto;">Logout</h5>
+        </div>
+    </div>
+    <div class="footer lighter">
+        <div class="parent">
+            <div class="div1">Versione</div>
+            <div class="div2">PROD 10.1.2(90008)</div>
+            <div class="div3">Condizioni Generali di Utilizzo</div>
+            <div class="div4">Informativo privacy</div>
+            <div class="div5">La nostra email:</div>
+            <div class="div6">servizioclienti@mycicero.it</div>
+            <div class="div7">Il nostro website:</div>
+            <div class="div8">https://arriva.it</div>
+            <div class="div9" id="orario_timb"></div>
+        </div>
+    </div>
+    <script src="./js/date.js" async defer></script>
+</body>
+
+</html>
