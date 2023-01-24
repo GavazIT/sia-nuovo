@@ -11,6 +11,15 @@ function getOrario() {
   timeFisso.textContent = data + " " + orario;
 
 }
+function saveOrario(orario){
+  localStorage.setItem('orario', orario);
+}
+function orarioTimb(){
+  const orario = localStorage.getItem('orario');
+  document.getElementById("orario_timb").textContent = orario;
+
+
+}
 function formatDate(date) {
   return [
     padTo2Digits(date.getDate()),
@@ -46,12 +55,14 @@ function init() {
     if (chk == 0) {
       const emessoTime = document.getElementById("emesso");
       const timeFisso = document.getElementById("orario_timb");
+
       const data = formatDate(new Date());
       const orario = new Date().toLocaleTimeString('en-US', {
         hour12: false,
       });
       emessoTime.textContent = "Emesso il: " + data + " " + hours + ":" + minutes;
       timeFisso.textContent = data + " " + orario;
+      saveOrario(timeFisso.textContent);
       chk = 1;
     }
   }
