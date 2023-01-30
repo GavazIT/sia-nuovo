@@ -11,14 +11,12 @@ function getOrario() {
   timeFisso.textContent = data + " " + orario;
 
 }
-function saveOrario(orario){
+function saveOrario(orario) {
   localStorage.setItem('orario', orario);
 }
-function orarioTimb(){
+function orarioTimb() {
   const orario = localStorage.getItem('orario');
   document.getElementById("orario_timb").textContent = orario;
-
-
 }
 function formatDate(date) {
   return [
