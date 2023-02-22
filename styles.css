@@ -2,21 +2,27 @@
     font-family: openSans;
     src: url('./fonts/OpenSans-Regular.ttf');
 }
+@font-face {
+    font-family: openSansbold;
+    src: url('./fonts/OpenSans-Bold.ttf');}
 body, html{
     margin: 0;
     height: 100vh;
     width: 100vw;
-    background-color: #111111;
+    background-color: #ffffff;
 }
 *{
     font-family: "openSans", Tahoma, Geneva, Verdana, sans-serif;
+}
+.bold{
+    font-family: "openSansbold", Tahoma, Geneva, Verdana, sans-serif!important;
 }
 .blue{
     background-color: #08a6b2;
 }
 .navbar{
     position: sticky;
-    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.25);
+    box-shadow: rgba(0, 0, 0, 0.397) 0px 3px 8px;
     display: flex;
     align-items: center;
     justify-items: center;
@@ -46,7 +52,7 @@ body, html{
 }
 .green{
 
-    background: #66f3a1;
+    background: #5bd08c;
 }
 .titolo_attivo{
     top : 40px;
@@ -87,15 +93,15 @@ margin-top:-18px;
     width: 100%;
   }
 .lighter{
-    background: #0d0d0e;
+    background: #ffffff;
 }
 .container{
-    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.25);
-    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.397) 0px 3px 8px;
+    border-radius: 10px;
     width:90%;
     margin-left: auto;
     margin-right:  auto;
-    margin-top: 80px;
+    margin-top: 65px;
 }
 .container_header{
     padding: 5px 20px;
@@ -117,12 +123,15 @@ margin-top:-18px;
 .info span{
     font-size: 12pt;
     padding-top: 10px;
+    color: black;
 }
 .video{
-    
+    margin: 0 auto;
+    width: 90vw;
     height: 80px;
 }
 video{
+    
     padding-top: 30px;
     height: 50px;
     width: 100%;
@@ -139,7 +148,7 @@ video{
     width: 70%;
     padding: 10px 20px;
     font-weight: 400!important;
-    color:white!important;
+    color:black!important;
     display: flex;
     flex-direction: column;
 }
@@ -148,30 +157,37 @@ video{
     padding: 10px ;
     padding-left: 20px !important;
     font-weight: 400!important;
-    color:white!important;
+    color:black!important;
     display: flex;
     flex-direction: column;
     text-align: right;
 }
 .gray{
-    background-color: rgb(58, 58, 58);
+    background-color: rgb(219, 219, 219);
 }
 .prezzo{
     margin-top: 10px;
     font-weight: 600;
-    color:white;
+    color:black;
     padding: 0 20px;
 }
 .id_logo{
+    padding-bottom: 0!important;
     display: flex;
     align-items: center;
     gap:30px;
 }
-
+.usati_box{
+    box-shadow: rgba(0, 0, 0, 0.397) 0px 3px 8px;
+    width:80vw;
+    margin: 0 auto;
+    margin-top: 15px;
+    border-radius: 10px;
+}
 /* BIGLIETTI */
 .upper_container{
     font-size: 13pt;
-    padding: 0 40px;
+    padding: 0 45px;
     display: flex;
     flex-direction: row;
     width: 80vw;
@@ -182,7 +198,7 @@ video{
 }
 .upper_container div{
     border: 2px solid #08a6b2;
-    height: 18px;
+    height: 14px;
     padding:6px;
     border-radius: 10px;
     display: flex;
@@ -191,13 +207,16 @@ video{
     gap:5px;
 }
 .main_container{
-    background:#0d0d0e;
+    background:#ffffff;
+    box-shadow: rgba(0, 0, 0, 0.397) 0px 3px 8px;
     width:80vw;
     margin: 0 auto;
     height:fit-content;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    padding-bottom: 15px;
+    border-radius: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
 }
 .blue_indicator{
     margin-bottom: 5px;
@@ -216,19 +235,20 @@ video{
     padding-left: 80px;
     padding-top: 10px;
     padding-bottom: 10px;
-    border-bottom: 1px solid rgb(51, 51, 51);
+    border-bottom: 1px solid rgb(233, 233, 233);
 }
 .info_container{
     padding-left: 10px;
+
 }
 .info_container h5{
     margin-top: 10px;
     color:#08a6b2;
-    margin-bottom: 5px;
+    margin-bottom: 1px;
     font-size: 12pt;
 }
 .info_container span{
-    margin-top: -60px;
-    color:white;
+    padding-top: -60px;
+    color:rgb(0, 0, 0);
     font-size: 10pt;
 }

@@ -2,7 +2,7 @@ var i = 100;
 var sesso = true;
 function progressValue(){
     document.getElementById("progress").style.width = i+ "%";
-    i=i-5;
+    i=i-3;
     
 }
 setInterval(progressValue,5000);

@@ -51,14 +51,14 @@ function init() {
     const formattedString = dateString.replace(", ", " - ");
     timeDisplay.textContent = formattedString;
     if (chk == 0) {
-      const emessoTime = document.getElementById("emesso");
+      const emessoTime = document.getElementById("orario_emissione");
       const timeFisso = document.getElementById("orario_timb");
 
       const data = formatDate(new Date());
       const orario = new Date().toLocaleTimeString('en-US', {
         hour12: false,
       });
-      emessoTime.textContent = "Emesso il: " + data + " " + hours + ":" + minutes;
+      emessoTime.innerHTML =  data + " " + hours + ":" + minutes;
       timeFisso.textContent = data + " " + orario;
       saveOrario(timeFisso.textContent);
       chk = 1;

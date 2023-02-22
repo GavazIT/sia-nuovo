@@ -12,6 +12,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body onload="init()">
+        <script src="./js/date.js" async defer></script>
+        <script src="./js/progress.js" async defer></script>
         <div class="blue navbar">
             <div>
               <i onclick="document.location= 'index.html'" class="fa-solid fa-chevron-left" style="float: left;"></i>
@@ -32,26 +34,24 @@
                 <img width="150" height="150" src="./img/qr.jpg">
                 <span ><i class="fa-solid fa-magnifying-glass"></i>Ingrandisci</span>
             </div>
-            <div style="color:white; padding: 10px 20px;">
+            <div style="color:black; padding: 10px 20px;">
                 <i class="fa-regular fa-clock"></i>
                 <span id="time">10:10:10</span>
                 <div class="progress" >
                     <div class="progress-value" id="progress"></div>
                   </div>
                 <span style="float:right">978</span>
-                <img style="float:right;padding-right:10px" src="./img/lock.svg" width="25" height="30">
+                <img style="float:right;padding-right:10px" src="./img/lock.svg" width="2" height="25">
 
             </div>
         </div>
-        <div class="lighter container" style="margin-top: 20px!important;">
             <div class="video">
                 <video  autoplay loop muted >
                     <source src="./img/gifloading.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
                 </video>
             </div>
-            <h3 id="tariffa_text" style="color:#08a6b2;padding-left: 10px;padding-bottom: 10px;">Corsa Semplice tariffa A</h3>
-        </div>
+            <h3 id="tariffa_text" style="color:#08a6b2;padding-left: 20px;padding-bottom: 0px;margin-top:10px;">Corsa Semplice tariffa A</h3>
         <div class="green box"></div>
         <div class="gray container" style="margin-top: 10px!important;display: flex;">
             <div class="left_info">
@@ -64,8 +64,8 @@
             </div>
         </div>
         <div class="gray container" style="height:50px;align-items:center;margin-top: 10px!important;display: flex;">
-            <span style=" padding-left: 20px;color: white;" id="emesso">Emesso il:</span>
-            <span style="padding-left: 10px;font-weight:700;color: white;" id="orario_emissione"><b></b></span>
+            <span style=" padding-left: 20px;color: black;" id="emesso">Emesso il:</span>
+            <span style="padding-left: 5px;color: black;" class="bold" id="orario_emissione"></span>
         </div>
         <div class="prezzo">
             <span style="padding-top:10px;float:left">Prezzo</span>
@@ -74,14 +74,13 @@
         <br><br>
         <div class="id_logo" style="padding: 20px 20px;">
             <img src="./img/sia logo.png" width="150" height="50">
-            <span style="font-size:15pt;color:white;float:right">#20027161/498773</span>
+            <span class="bold" style="font-size:15pt;color:black;float:right;">#20027161/498773</span>
         </div>
         <div class="" style="padding: 0px 20px;margin-top: 50px;">
-            <h3 id="tariffa" style="font-weight:900;color:rgb(39, 189, 39);top:760px;font-size:65pt;position:absolute;margin-left:29px">A</h3>
-            <p style="color: white;font-size:10pt"><b>Arriva Italia Srl</b><br>Via trebazio 1<br>20145 Milano<br>C.F e P.Iva: 05950660968</p>
+            <h3 id="tariffa" class="bold" style="font-weight:500;color:rgb(39, 189, 39);top:710px;font-size:65pt;position:absolute;margin-left:29px">A</h3>
+            <p style="color: black;font-size:10pt"><b>Arriva Italia Srl</b><br>Via Trebazio 1<br>20145 Milano<br>C.F e P.Iva: 05950660968</p>
         </div>
-        <script src="./js/date.js" async defer></script>
-        <script src="./js/progress.js" async defer></script>
+
 
     </body>
 </html>
