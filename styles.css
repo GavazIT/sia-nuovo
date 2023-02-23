@@ -164,6 +164,7 @@ video{
 }
 .gray{
     background-color: rgb(237 237 237);
+    box-shadow: none!important;
 }
 .prezzo{
     margin-top: 10px;
