@@ -163,7 +163,7 @@ video{
     text-align: right;
 }
 .gray{
-    background-color: rgb(241 241 241);
+    background-color: rgb(219, 219, 219);
 }
 .prezzo{
     margin-top: 10px;
@@ -179,7 +179,7 @@ video{
 }
 .usati_box{
     box-shadow: rgba(0, 0, 0, 0.397) 0px 3px 8px;
-    width:80vw;
+    width:85vw;
     margin: 0 auto;
     margin-top: 15px;
     border-radius: 10px;
@@ -209,7 +209,7 @@ video{
 .main_container{
     background:#ffffff;
     box-shadow: rgba(0, 0, 0, 0.397) 0px 3px 8px;
-    width:80vw;
+    width:85vw;
     margin: 0 auto;
     height:fit-content;
     border-top-left-radius: 20px;
