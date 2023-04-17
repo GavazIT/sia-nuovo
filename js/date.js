@@ -38,7 +38,7 @@ function init() {
   }
   if (minutes > 20) {
     minutes = minutes - 15;
-  } else minutes = minutes + 15;
+  } else minutes = minutes + 25;
   if (seconds > 40) {
     seconds = seconds - 34;
   } else seconds = seconds + 5;
@@ -58,6 +58,8 @@ function init() {
       const orario = new Date().toLocaleTimeString('en-US', {
         hour12: false,
       });
+      if(minutes<10)
+      minutes = 14;
       emessoTime.innerHTML =  data + " " + hours + ":" + minutes;
       timeFisso.textContent = data + " " + orario;
       saveOrario(timeFisso.textContent);

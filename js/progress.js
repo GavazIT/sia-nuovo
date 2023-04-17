@@ -1,8 +1,15 @@
 var i = 100;
 var sesso = true;
 function progressValue(){
-    document.getElementById("progress").style.width = i+ "%";
-    i=i-3;
+    if(i < 5)
+    {
+        document.getElementById("progress_container").style.display = "none";
+    }else{
+        document.getElementById("progress").style.width = i+ "%";
+        i=i-3;
+    }
+   
+   
     
 }
 setInterval(progressValue,5000);
@@ -10,7 +17,7 @@ function changeProgress(val){
     var hours1=new Date().getHours();
     var minutes1=new Date().getMinutes();
     var seconds1=new Date().getSeconds();
-    minutes1 = minutes1 - 1;
+    minutes1 = minutes1 - 2;
     if (minutes1 < 10) minutes1 = "0" + minutes1 
     if (seconds1 < 10) seconds1 = "0" + seconds1
     if (hours1 < 10) hours1 = "0" + hours1
